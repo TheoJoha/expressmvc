@@ -12,7 +12,6 @@ router.get("/", controller.index)
 // new
 router.get("/new", controller.new)
 
-
 // destroy
 router.delete("/:id", controller.destroy)
 
@@ -22,8 +21,8 @@ router.put("/:id", controller.update)
 // create
 router.post("/", controller.create)
 
-// edit
-router.post("/:id/edit", controller.edit)
+// edit -- should maybe be put???
+router.get("/:id/edit", controller.edit)
 
 // show
 router.get("/:id", controller.show)

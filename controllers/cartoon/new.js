@@ -1,5 +1,5 @@
 function newCartoon(req, res) {
-    res.render("cartoon/index.ejs")
+    res.render("cartoon/new.ejs")
 }
 
 module.exports = newCartoon

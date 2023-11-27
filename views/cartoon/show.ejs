@@ -11,8 +11,8 @@
     <h1><%= cartoon.name %></h1>
     <h2>Year: <%= cartoon.yearCreated %></h2>
     <a href="/cartoon"><button>Go back to main</button></a>
-    <a href="/cartoon<%= cartoon._id %>/edit"><button>EDIT</button></a>
-    <form action="/cationn/<%= cartoon._id %>?_method=delete" method="post">
+    <a href="/cartoon/<%= cartoon._id %>/edit"><button>EDIT</button></a>
+    <form action="/cartoon/<%= cartoon._id %>?_method=delete" method="post">
         <input type="submit" value="DELETE">
     </form>
 </body>

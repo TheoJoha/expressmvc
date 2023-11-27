@@ -2,7 +2,7 @@ const Cartoon = require("../../models/cartoon")
 
 async function destroy(req, res) {
     const id = req.params.id
-    await Cartoon.findByIdAndRemove(id)
+    await Cartoon.findByIdAndDelete(id)
     res.redirect("/cartoon")
 }
 
